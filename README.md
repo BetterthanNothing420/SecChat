@@ -10,7 +10,7 @@
 - Go to a folder and open a command prompt or terminal.
 - Clone the repository (Git required) or unzip [this](https://github.com/BetterthanNothing420/secchat/archive/refs/heads/main.zip) in the folder.
 
--or git clone to folder:```git clone https://github.com/BetterthanNothing420/secchat.git```
+-or git clone to folder:```https://github.com/BetterthanNothing420/SecChat.git```
 
 Navigate to the project directory:
 ```cd secchat```
