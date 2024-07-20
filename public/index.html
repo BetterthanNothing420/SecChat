@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kalam&family=Tilt+Neon:XROT,YROT@-45..45,-45..45&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kalam&family=Tilt+Neon:XROT,YROT@-45..45,-45..45&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Lobby</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="dark-mode">
+    <div id="login-container" class="container">
+        <h2 class="txt1"> LOGIN </h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+    </div>
+
+    <div id="register-container" class="container">
+        <h2 class="txt1">Register</h2>
+        <input type="text" id="register-username" placeholder="Username">
+        <input type="password" id="register-password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <div id="chat-container" class="container">
+        <div class="header">
+            <h2 class="txt">Hotel Lobby</h2>
+            <button id="logoutbtn" onclick="logout()">Logout</button>
+            <button id="darkmodebtn" onclick="toggleDarkMode()">Dark Mode</button>
+            
+            <div id="user-count"> </div>
+            <div class="dropdown">
+                <button class="dropbtn">Active Users</button>
+                <div id="user-list" class="dropdown-content">
+                    <button class="spoiler-btn" onclick="toggleSpoiler(this)">Spoiler</button>
+                    <!-- Active users will be appended here -->
+                </div>
+            </div>
+            <button id="changelog-button" onclick="showChangelog()">Changelog</button> <!-- Changelog button -->
+            
+        </div>
+        <div id="messages" class="messages"></div>
+        <div id="input-container">
+            <input type="file" id="file-input" multiple style="display: none;">
+            <button id="upload-button" onclick="triggerFileInput()">Upload Files</button>
+            <input type="text" id="message-input" placeholder="Type a message...">
+        
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+        
+        
+    </div>
+    
+
+    <div id="changelog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeChangelog()">&times;</span>
+            <h2>Changelog</h2>
+            <div id="changelog-content"></div>
+            <button id="viewimg" onclick="window.location.href='/check-code'">w.i.p</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
