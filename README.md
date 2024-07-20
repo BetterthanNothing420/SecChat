@@ -1,4 +1,4 @@
- Chatroom
+ ####Chatroom
 
 ## Installation
 
@@ -30,4 +30,4 @@ Run the server:
 
 ```node server.js```
 
-Enjoy!" format for github readme
+####Enjoy!
