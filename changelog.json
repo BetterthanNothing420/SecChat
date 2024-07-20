@@ -1,0 +1,31 @@
+[
+    {
+        "version":"1.1.0",
+        "date": "2024-06-28",
+        "description":"HUGE UPDATE!!, added hyperlink , fixed layout for larger devices, updated gui, added better readable background, added easter eggs."
+    },
+    {
+        "version":"1.0.3",
+        "date": "2024-05-27",
+        "description":"added custom commands .eg /kick,/lock/unlock etc"
+    },
+    {
+        "version":"1.0.2",
+        "date": "2024-05-21",
+        "description":"fixed the layout (swapped changelog and send button)(fullscreen chat).Added lock room feature where admin can lock room to restrict people from logging in"
+    },
+    {
+        "version": "1.0.1",
+        "date": "2024-05-20",
+        "description":[ "Added Changelog feature.",
+        "fixed the layout of changelog"
+        ]
+
+        
+    },
+    {
+        "version": "1.0.0",
+        "date": "2024-05-19",
+        "description": "Initial release."
+    }
+]
