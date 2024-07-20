@@ -4,6 +4,7 @@
 
 ### Step 0
 - Get [Node.js](https://nodejs.org/en).
+- get [git](https://git-scm.com/downloads) 
 
 ### Step 1
 - Go to a folder and open a command prompt or terminal.
