@@ -150,7 +150,7 @@ app.get('/changelog', (req, res) => {
 // Route to check the access code
 app.get('/check-code', (req, res) => {
   const accessCode = req.query.code;
-  const correctCode = '9898'; // Set your desired four-digit code here
+  const correctCode = '0000'; // Set your desired four-digit code here
 
   if (accessCode === correctCode) {
     res.redirect('/eyyyeoriorioasdhksadjkas');
